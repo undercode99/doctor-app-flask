@@ -29,3 +29,6 @@ services:
         - db
       networks:
         - default
+
+volumes:
+  pg_data:
