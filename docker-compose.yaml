@@ -20,15 +20,15 @@ services:
     restart: always
     build:
       context: .
-      env_file: .env
-      ports:
-        - 5000:80
-      volumes:
-        - .:/app
-      depends_on:
-        - db
-      networks:
-        - default
+    env_file: .env
+    ports:
+      - 5000:80
+    volumes:
+      - .:/app
+    depends_on:
+      - db
+    networks:
+      - default
 
 volumes:
   pg_data:
