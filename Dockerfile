@@ -6,4 +6,6 @@ COPY . /app
 WORKDIR /app
 RUN pytest
 EXPOSE 5000
-ENTRYPOINT [ "docker-entrypoint.sh" ]
+RUN ls -lah .
+RUN chmod +x docker-entrypoint.sh
+ENTRYPOINT [ "./docker-entrypoint.sh" ]
