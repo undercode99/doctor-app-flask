@@ -19,15 +19,7 @@ Features:
    
    https://documenter.getpostman.com/view/17611308/UUy38m3U 
 
-- **Link Deployed API (Hosted on AWS)** : 
 
-   https://doctor-app.usman.id/api/v1/login 
-   
-   Auth login employee default:
-
-    username : **employee**
-    
-    password : **employee123**
 
 # Getting start
 1. Clone this repository
@@ -63,3 +55,12 @@ Features:
    - Deploy and Running In Background
 
    ```$ docker-compose up -d```
+   
+5. Running already running with port 80
+   http://localhost/api/v1/login
+ 
+   Auth login employee default:
+
+    username : **employee**
+    
+    password : **employee123**
