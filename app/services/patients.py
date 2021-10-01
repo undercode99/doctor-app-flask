@@ -86,7 +86,7 @@ class PatientServices:
         )
         client = bigquery.Client(credentials=credentials)
         # Perform a query.
-        QUERY = "SELECT no_ktp, vaccine_type, vaccine_count FROM `delman-interview.interview_mock_data.vaccine-data` limit 5"
+        QUERY = "SELECT no_ktp, vaccine_type, vaccine_count FROM `delman-interview.interview_mock_data.vaccine-data`"
         query_job = client.query(QUERY)  # API request
         rows = query_job.result()  # Waits for query to finish
         results = []
