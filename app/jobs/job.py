@@ -13,7 +13,7 @@ def update_data_vaccine_patients():
 """ init jobs """
 def init_jobs(app):
     scheduler.init_app(app)
-    scheduler.add_job(id = 'Update Google Big Query Patients', func=update_data_vaccine_patients, trigger="interval", seconds=10)
+    scheduler.add_job(id = 'Update Google Big Query Patients', func=update_data_vaccine_patients, trigger='cron', hour='01', minute='00')
     scheduler.start()
 
 
