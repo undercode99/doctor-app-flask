@@ -3,7 +3,7 @@ services:
   db:
     container_name: pg
     restart: always
-    image: postgres:11
+    image: postgres:11-alpine
     environment:
       POSTGRES_USER: ${POSTGRES_USER}
       POSTGRES_PASSWORD: ${POSTGRES_PASSWORD}
