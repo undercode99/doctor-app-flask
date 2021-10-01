@@ -3,6 +3,7 @@ from ..repositories import EmployeesRepository
 from datetime import date
 from flask import current_app as app
 
+
 @app.cli.command('seed')
 def seed_commands():
 

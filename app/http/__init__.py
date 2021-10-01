@@ -1,1 +1,2 @@
-from . import api
+from .api import register_api
+
