@@ -22,7 +22,7 @@ services:
       context: .
     env_file: .env
     ports:
-      - 5000:80
+      - 80:5000
     volumes:
       - .:/app
     depends_on:
