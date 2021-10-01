@@ -1,0 +1,4 @@
+
+
+class ExceptionDoctorFailedWorkTime(Exception):
+    pass
